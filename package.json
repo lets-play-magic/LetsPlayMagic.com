@@ -1,11 +1,4 @@
 {
-  "dependencies": {
-    "next": "^8.0.3",
-    "react": "^16.8.3",
-    "react-dom": "^16.8.3"
-  },
-  "scripts": {
-    "dev": "next",
-    "now-build": "next build"
-  }
+  "private": true,
+  "workspaces": ["api", "www"]
 }

@@ -1,0 +1,14 @@
+{
+  "private": true,
+  "name": "www",
+  "version": "1.0.0",
+  "dependencies": {
+    "isomorphic-unfetch": "3.0.0",
+    "next": "^8.0.3",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3"
+  },
+  "scripts": {
+    "now-build": "next build"
+  }
+}
