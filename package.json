@@ -5,6 +5,7 @@
     "react-dom": "^16.8.3"
   },
   "scripts": {
-    "dev": "next"
+    "dev": "next",
+    "now-build": "next build"
   }
 }
