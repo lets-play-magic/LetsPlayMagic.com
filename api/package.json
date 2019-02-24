@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "name": "api",
+  "version": "1.0.0",
+  "dependencies": {
+    "apollo-server": "^2.4.6",
+    "graphql": "^14.1.1"
+  }
+}

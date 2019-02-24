@@ -4,22 +4,12 @@
     "alias": ["letsplaymagic.com"],
     "builds": [
         { "src": "www/package.json", "use": "@now/next" },
-        { "src": "api/go/*.go", "use": "@now/go" },
-        { "src": "api/python/*.py", "use": "@now/python" },
-        { "src": "api/php/*.php", "use": "@now/php" },
-        { "src": "api/node/*.js", "use": "@now/node" }
+        { "src": "api/index.js", "use": "@now/node-server" }
     ],
     "routes": [
         {
-          "src": "/api/(.*)",
-          "dest": "/api/$1"
-        },
-        {
-          "src": "/redirect-test",
-          "status": 302,
-          "headers": {
-            "location": "https://google.com"
-          }
+          "src": "/api(.*)",
+          "dest": "/api/index.js"
         },
         {
           "src": "/(.*)",
